@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-practice';
+  title = 'Angular practice';
+
+  arbitraryData: string = 'Changes initial';
+  arbitraryDataInit: string = 'Init initial';
+
+  constructor() {
+    setTimeout(() => {
+      this.arbitraryData = 'Changes final';
+      this.arbitraryDataInit = 'Init final';
+      
+    }, 5000);
+
+
+  }
 }

@@ -1,0 +1,23 @@
+<div class="abc">
+    Basic Component code:
+</div>
+<br>
+<br>
+<!-- how to take input -->
+<h3>Code 1:</h3>
+<input type="text" #inputValue><br><br>
+<button (click)="onDisplay(inputValue)">DISPLAY</button>
+<br>
+<h4>Hey! {{info}}</h4>
+
+<br><br><hr><br><br>
+
+<!-- Two way binding for input -->
+<h3>Code 2:</h3>
+<h3>Two way binding</h3>
+<br>
+<input type="text" [(ngModel)] = 'tempInput'>
+<br><br>
+<button (click)="onDisplayTwo()">DISPLAY</button>
+<br>
+<h4>Hey! Two way Binding => {{info_two}}</h4>
